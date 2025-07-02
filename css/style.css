@@ -23,7 +23,7 @@ body{
 
 .logo{
     position: absolute;
-    top: 250px;
+    top: 15%;
     
 }
 
@@ -189,7 +189,7 @@ body{
 }
 
 
-.quantities .people  .number-people{
+.quantities .people .number-people{
     height: 50px;
     border: 2px solid transparent;
     background-color: var(--GreyNeutral50);
@@ -291,4 +291,62 @@ body{
 
 .screen .screen-container .reset:hover{
     background-color: var(--GreenPrimary400);
+}
+
+@media  (max-width:400px){
+    body{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container{
+        margin-top: 130px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container .quantities{
+        width: 310px;
+        /* padding: 20px; */
+        margin: 0;
+        gap: 10px;
+    }    
+
+    .quantities .bill .money{
+        width: 310px;
+        padding: 0;
+    }
+    
+    .quantities .percentage .gridButtons{
+        width: 310px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center; 
+    }
+
+    .screen{
+        margin: 0 20px 30px 20px;
+        padding: 0;
+        width: 310px;
+    }
+
+    .screen .screen-container{
+        
+        padding: 20px;
+    }
+
+    .bill .people{
+        width: auto;
+    }
+
+    .logo{
+        top: 5%;
+    }
 }

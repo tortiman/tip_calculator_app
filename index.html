@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
@@ -23,27 +24,27 @@
             <img src="./images/icon-dollar.svg" alt="" class="dolar" />
             <span class="title-bill">Bill</span>
           </div>
-          <input type="textbox" class="money" />
+          <input type="textbox" id="moneyId" class="money" />
         </div>
         <div class="percentage">
           <span class="title-percentage">Select tip %</span>
           <div class="gridButtons">
-            <button class="button-normal">5%</button>
-            <button class="button-normal">10%</button>
-            <button class="button-normal">15%</button>
-            <button class="button-normal">25%</button>
-            <button class="button-normal">50%</button>
-            <input type="button" class="custom" value="Custom" />
+            <button id="5Id" class="button-normal">5%</button>
+            <button id="10Id" class="button-normal">10%</button>
+            <button id="15Id" class="button-normal">15%</button>
+            <button id="25Id" class="button-normal">25%</button>
+            <button id="50Id" class="button-normal">50%</button>
+            <input type="button" id="customId" class="custom" value="Custom" />
           </div>
         </div>
         <div class="people">
           <div class="people-error">
             <img src="./images/icon-person.svg" alt="" class="user" />
             <span class="title-people">Number of people</span>
-            <span class="error">Can't be zero</span>
+            <span id="errorId" class="error">Can't be zero</span>
           </div>
 
-          <input type="textbox" class="number-people" />
+          <input type="textbox" id="numberPeopleId" class="number-people" />
         </div>
       </section>
       <section class="screen">
@@ -54,17 +55,17 @@
                 <span class="tip-person">Tip Amount</span>
                 <span class="person">/person</span>
               </div>
-              <span class="quantity-person">$0.00</span>
+              <span id="quantityPersonId" class="quantity-person">$0.00</span>
             </div>
             <div class="total">
               <div class="total-amount-person">
                 <span class="total-person">Total</span>
                 <span class="person">/person</span>
               </div>
-              <span class="total-quantity">$0.00</span>
+              <span id="totalQuantityId" class="total-quantity">$0.00</span>
             </div>
           </div>
-          <button class="reset">RESET</button>
+          <button id="resetId" class="reset">RESET</button>
         </div>
       </section>
     </main>
