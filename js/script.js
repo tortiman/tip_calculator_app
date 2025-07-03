@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{
     const moneyId=document.getElementById('moneyId');
-    const _5Percent=document.getElementById('5Id');
-    const _10Percent=document.getElementById('10Id');
-    const _15Percent=document.getElementById('15Id');
-    const _25Percent=document.getElementById('25Id');
-    const _50Percent=document.getElementById('50Id');
     const customId=document.getElementById('customId');
     const errorId=document.getElementById('errorId');
     const numberPeopleId=document.getElementById('numberPeopleId');
@@ -79,6 +74,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     /* --- END PRINCIPAL FUNCTION ---*/
     
 
+    /** --- HELPERS FUNCTIONS --- */
+
     function totalPerson(){
         // const total=0;
         console.log(percentage);
@@ -119,6 +116,8 @@ document.addEventListener('DOMContentLoaded',()=>{
             button.style.backgroundColor='hsl(183, 100%, 15%)';
         })
     }
+
+    /** --- END HELPERS FUNCTIONS --- */
 
     /** --- VALIDATORS FUNCTIONS */
 

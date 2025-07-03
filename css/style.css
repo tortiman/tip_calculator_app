@@ -17,7 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(197, 228, 231);
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'Space Mono', monospace;
     position: relative;
 }
 
@@ -315,15 +315,10 @@ body{
 
     .container .quantities{
         width: 310px;
-        /* padding: 20px; */
         margin: 0;
         gap: 10px;
     }    
 
-    .quantities .bill .money{
-        width: 310px;
-        padding: 0;
-    }
     
     .quantities .percentage .gridButtons{
         width: 310px;
