@@ -45,7 +45,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: clamp(0px, calc(30px * (100vw - 400px) / (1024 - 400)), 30px);;
+    margin: clamp(0px, calc(30px * (100vw - 400px) / (1024 - 400)), 30px);
     align-items: flex-start;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -192,7 +192,7 @@ body{
 .quantities .people .people-error .user{
     position: absolute;
     left: 20px;
-    top: 55px  ;
+    top: 55px;
 }
 
 
@@ -321,7 +321,7 @@ body{
 
     .container .quantities{
         width: 310px;
-        margin: clamp(0px, calc(30px * (100vw - 400px) / (1024 - 400)), 30px);
+        margin: clamp(0em, calc(1.87em * (100vw - 25em) / (1024 - 400)), 1.87em);
         gap: 10px;
     }    
 
