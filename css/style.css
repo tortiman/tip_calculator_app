@@ -148,8 +148,12 @@ body{
     font-family: 'Space Mono';
     font-weight: 700;
     cursor: pointer;
+    text-align: center;
 }
 
+.quantities .percentage .gridButtons .custom::placeholder{
+    text-align: center;
+}
 .quantities .people{
     width: 100%;
     display: flex;
