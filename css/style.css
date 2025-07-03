@@ -6,6 +6,9 @@
     --GreyNeutral200: hsl(185, 41%, 84%);
     --GreyNeutral50: hsl(189, 47%, 97%);
     --White: hsl(0, 100%, 100%);
+
+    --backgroundColor:rgb(197, 228, 231);
+    --borderError:rgb(198, 139, 123);
 }
 
 body{
@@ -16,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(197, 228, 231);
+    background-color: var(--backgroundColor);
     font-family: 'Space Mono', monospace;
     position: relative;
 }
@@ -28,7 +31,7 @@ body{
 }
 
 .container{
-    width: 920px;
+    width: 57.5em;
     height: 490px;
     background-color: var(--White);
     border-radius: 20px;
@@ -42,7 +45,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 30px;
+    margin: clamp(0px, calc(30px * (100vw - 400px) / (1024 - 400)), 30px);;
     align-items: flex-start;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -55,7 +58,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 30px;
+    margin: clamp(0px, calc(30px * (100vw - 400px) / (1024 - 400)), 30px);;
     border-radius: 15px;
 }
 
@@ -88,9 +91,9 @@ body{
     border-radius: 5px;
     cursor: pointer;
     text-align: end;
-    padding-right: 15px;
+    padding-inline-end: 15px;
     font-size: 25px;
-    font-family: 'Space Mono';
+    font-family: 'Space Mono', monospace;
     font-weight: 700;
     color: var(--GreenNeutral900);
     
@@ -145,7 +148,7 @@ body{
     background-color: var(--GreyNeutral50);
     font-size: 20px;
     color: var(--GreyNeutral400);
-    font-family: 'Space Mono';
+    font-family: 'Space Mono', monospace;
     font-weight: 700;
     cursor: pointer;
     text-align: center;
@@ -182,7 +185,7 @@ body{
 }
 
 .quantities .people .people-error .error{
-    color: rgb(198, 139, 123);
+    color: var(--borderError);
     visibility: hidden;
 }
 
@@ -200,9 +203,9 @@ body{
     border-radius: 5px;
     cursor: pointer;
     text-align: end;
-    padding-right: 15px;
+    padding-inline-end: 15px;
     font-size: 25px;
-    font-family: 'Space Mono';
+    font-family: 'Space Mono', monospace;
     font-weight: 700;
     color: var(--GreenNeutral900);
     
@@ -287,7 +290,7 @@ body{
     background-color: var(--GreyNeutral500);
     cursor: pointer;
     border: none;
-    font-family: 'Space Mono';
+    font-family: 'Space Mono', monospace;
     color: var(--GreenNeutral900);
     font-weight: 700;
     font-size: 20px;
@@ -297,7 +300,7 @@ body{
     background-color: var(--GreenPrimary400);
 }
 
-@media  (max-width:400px){
+@media  (max-width:25em){
     body{
         display: flex;
         flex-direction: column;
@@ -305,6 +308,8 @@ body{
     }
 
     .container{
+        min-width: 24.4em;
+        max-width: 57.5em;
         margin-top: 130px;
         width: auto;
         height: auto;
@@ -315,7 +320,7 @@ body{
 
     .container .quantities{
         width: 310px;
-        margin: 0;
+        margin: clamp(0px, calc(30px * (100vw - 400px) / (1024 - 400)), 30px);;
         gap: 10px;
     }    
 
